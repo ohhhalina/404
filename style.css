@@ -28,7 +28,7 @@ div p{
     text-shadow: 0 0 200px #FFFFFF, 0 0 80px #2E8B57, 0 0 6px #191970;
 }
 #error span{
-    animation: upper 11s linear infinite;
+    animation: upper 10s linear infinite;
 }
 #code span:nth-of-type(2){
     animation: lower 10s linear infinite;
@@ -38,26 +38,29 @@ div p{
     opacity: .4;
 }
 @keyframes upper{
-    0%, 19.999%, 62.999%, 70%, 100%{
+    100%, 38%, 50%, 0%, 21%, 35%, 48%, 70%, 85%, 21%, 0%
+    {
         opacity: .99;
         text-shadow: 0 0 80px whitesmoke, 0 0 30px SeaGreen, 0 0 6px #191970;
     }
-    20%, 21.999%, 63%, 63.999%, 65%, 69.999%{
+    20%, 22%, 63%, 64%, 65%, 70% 
+    {
         opacity: .4;
         text-shadow: none;
     }
 }
 
 @keyframes lower{
-    0%, 12%, 18.999%, 23%, 31.999%, 46%, 49.999%,
-    51%, 58.999%, 68.999%, 71%, 78.999%, 96%, 100%{
+    100%, 10%, 20%, 25%, 46%, 90%, 51%, 100%
+    {
         opacity: .99;
         text-shadow: 0 0 80px red, 0 0 30px firebrick,
         0 0 6px darkred;
     }
-    19%, 22.999%, 32%, 36.999%, 50%, 55.999%, 64%, 65.999%,
-    86%, 89.999%{
+    19%, 22%, 32%, 36%, 50%, 55%, 64%, 65%,
+    86%, 90%{
         opacity: 0.4;
         text-shadow: none;
     }
 }
+
