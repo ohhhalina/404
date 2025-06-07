@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Monoton&display=swap');
+
+body{
+    background-color: #111111;
+    background-image: url(bg.jpg);
+}
+div{
+    margin-top: 90px;
+    padding: 40px;
+    font-family: "Monoton";
+    font-size: 95px;
+    text-align: center;
+    text-transform: uppercase;
+}
+#error{
+    text-shadow: 0 0 50px whitesmoke, 0 0 30px darkgreen;
+    color: white;
+}
+#code{
+    text-shadow: 0 0 80px whitesmoke, 0 0 30px firebrick, 0 0 6px darkred;
+    color: red;
+}
+div p{
+    margin: 5px;
+}
+#error:hover
+{
+    text-shadow: 0 0 200px #FFFFFF, 0 0 80px #2E8B57, 0 0 6px #191970;
+}
