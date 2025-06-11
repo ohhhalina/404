@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Monoton&display=swap');
 
 body{
-    background-color: #111111;
     background-image: url(bg.jpg);
+    width: 100%;
 }
 div{
     margin-top: 90px;
@@ -11,6 +11,7 @@ div{
     font-size: 95px;
     text-align: center;
     text-transform: uppercase;
+    width: 100%;
 }
 #error{
     text-shadow: 0 0 50px whitesmoke, 0 0 30px darkgreen;
@@ -28,7 +29,7 @@ div p{
     text-shadow: 0 0 200px #FFFFFF, 0 0 80px #2E8B57, 0 0 6px #191970;
 }
 #error span{
-    animation: upper 10s linear infinite;
+    animation: upper 3s linear infinite;
 }
 #code span:nth-of-type(2){
     animation: lower 10s linear infinite;
@@ -38,18 +39,17 @@ div p{
     opacity: .4;
 }
 @keyframes upper{
-    100%, 38%, 50%, 0%, 21%, 35%, 48%, 70%, 85%, 21%, 0%
+    100%, 51.999%, 38%, 38.999%, 50%, .999%, 22%, 0%, 21.999%, 35%, 70%, 48%, 70%, 85%, 21%, 0%,100%, 51.999%, 38.999%, 50%, .999%, 22%, 0%, 21.999%, 35%, 70%, 48%, 70%, 85%, 21%, 0% 
     {
         opacity: .99;
         text-shadow: 0 0 80px whitesmoke, 0 0 30px SeaGreen, 0 0 6px #191970;
     }
-    20%, 22%, 63%, 64%, 65%, 70% 
+   64%, 20%, 22%, 63%, 64%, 65%, 70%, 22%
     {
         opacity: .4;
         text-shadow: none;
     }
 }
-
 @keyframes lower{
     100%, 10%, 20%, 25%, 46%, 90%, 51%, 100%
     {
@@ -57,10 +57,16 @@ div p{
         text-shadow: 0 0 80px red, 0 0 30px firebrick,
         0 0 6px darkred;
     }
-    19%, 22%, 32%, 36%, 50%, 55%, 64%, 65%,
-    86%, 90%{
+    19%, 22%, 32%, 36%, 50%, 55%, 64%, 65%, 86%, 90%
+    {
         opacity: 0.4;
         text-shadow: none;
     }
 }
 
+@media (max-width: 480px ) {
+    div {
+        font-size: 40px;
+        padding: 20px;
+    }
+}
